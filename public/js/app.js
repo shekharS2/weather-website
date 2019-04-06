@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
             }
             else{
                 messageOne.textContent = 'Showing weather of: ' + data.location
-                messageTwo.textContent = 'Probability of Rain: ' + data.forecast.rainProb + '. ' + data.forecast.summary + ' The temperature is: ' + data.forecast.temperature + ' in degree Celcius.'
+                messageTwo.textContent = 'Probability of Rain: ' + data.forecast.rainProb + '. ' + data.forecast.summary + ' The temperature is: ' + data.forecast.temperature + ' in degree Celcius. The highest temperature is: ' + data.forecast.tempHigh + ' in degree Celcius. The lowest temperature is: ' + data.forecast.tempLow + ' in degree Celcius.'
             }
         })    
     })
